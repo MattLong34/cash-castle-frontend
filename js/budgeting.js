@@ -1,39 +1,52 @@
-<script>
-var ctx = document.getElementById('myChart').getContext('2d');
-var myChart = new Chart(ctx, {
-    type: 'bar',
+
+const budgetingForm = document.querySelector('#budgeting-form')
+budgetingForm.addEventListener('submit', (event)=> submitForm(event))
+
+// const resetForm = document.querySelector('#budgeting-form')
+// resetForm.addEventListener('submit', (event)=> resetChart(event))
+
+const userHousing = document.getElementById('housing')
+const userTransportation = document.getElementById('transportation')
+const userFood = document.getElementById('food')
+const userSavings = document.getElementById('savings')
+const userBills = document.getElementById('bills')
+
+var myDoughnutChart = new Chart(document.getElementById("myDoughnutChart"), {
+    type: 'doughnut',
     data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-        datasets: [{
-            label: '# of Votes',
-            data: [12, 19, 3, 5, 2, 3],
-            backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)'
-            ],
-            borderColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
-            ],
-            borderWidth: 1
-        }]
+        labels: ["Housing", "Transportation", "Food", "Savings", "Bills"],
+        datasets: [
+            {
+                label: "Population (millions)",
+                backgroundColor: ["#00d7ff", "#e86836","#ffc900","#00ff73","#ff00f9"],
+                data: [35,20,15,15,20]
+            }
+        ]
     },
     options: {
-        scales: {
-            yAxes: [{
-                ticks: {
-                    beginAtZero: true
-                }
-            }]
+        title: {
+            display: true,
+            text: 'Your Budget Breakdown'
         }
     }
 });
-</script>
+
+function submitForm(event){
+    event.preventDefault()
+    updateChart()
+}
+
+function updateChart() {
+    myDoughnutChart.data.datasets[0].data = [userHousing.value,userTransportation.value,userFood.value,userSavings.value,userBills.value];
+    myDoughnutChart.update()
+}
+
+// function submitForm(event){
+//     event.preventDefault()
+//     resetChart()
+// }
+
+// function resetChart() {
+//     myDoughnutChart.data.datasets[0].data = [35,20,15,15,20];
+//     myDoughnutChart.update()
+// }

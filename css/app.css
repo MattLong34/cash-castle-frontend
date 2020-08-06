@@ -5,7 +5,7 @@ body {
 }
 
 header .nav-item {
-    margin-left: 200px;
+    margin-left: 7rem;
 }
 
 header .fa-fort-awesome {
@@ -37,10 +37,22 @@ header .nav-item:hover {
     padding-bottom: 500px;
 }
 
-/* About Page */
+/* All PAGES */
 
 #about h1 {
     color: #00d7ff;
-    margin-top: 100px;
-    font-size: 80px;
+    margin-top: 2rem;
+    font-size: 5rem;
+}
+
+#data {
+    padding-bottom: 5rem;
+}
+
+.submit-button {
+    background-color: #00ff73 !important;
+}
+
+.reset-button {
+    background-color: lightgray !important;
 }
