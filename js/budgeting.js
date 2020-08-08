@@ -27,7 +27,21 @@ var myDoughnutChart = new Chart(document.getElementById("myDoughnutChart"), {
         title: {
             display: true,
             text: 'Your Budget Breakdown'
+        },
+        tooltips: {
+            callbacks: {
+              label: function(tooltipItem, data) {
+                return data['labels'][tooltipItem['index']] + ': ' + data['datasets'][0]['data'][tooltipItem['index']] + '%';
+              }
+            }
         }
+        // plugins: {
+        //     labels: {
+        //         render: 'percentage',
+        //         fontColor: ['white'],
+        //         precision: 2
+        //     }
+        // }
     }
 });
 
@@ -35,6 +49,10 @@ function submitForm(event){
     event.preventDefault()
     updateChart()
 }
+
+// let total = userHousing.value + userTransportation.value + userFood.value + userSavings.value + userBills.value
+const total = parseInt(userHousing.value) + parseInt(userTransportation.value) + parseInt(userFood.value) + parseInt(userSavings.value) + parseInt(userBills.value)
+const userHousingInteger = parseInt(userHousing.value)
 
 function updateChart() {
     myDoughnutChart.data.datasets[0].data = [userHousing.value,userTransportation.value,userFood.value,userSavings.value,userBills.value];
