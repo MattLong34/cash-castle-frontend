@@ -72,12 +72,21 @@ header .nav-item:hover {
 
 /* All PAGES */
 
+#about {
+    font-family: 'Nunito', sans-serif;
+}
+
 #about h1 {
     color: #00d7ff;
     margin-top: 2rem;
     font-size: 5rem;
     font-family: 'Nunito', sans-serif;
     font-weight: 600;
+}
+
+#about p {
+    font-weight: 300;
+    font-size: 18px;
 }
 
 #data {
