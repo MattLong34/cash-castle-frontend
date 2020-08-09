@@ -77,11 +77,10 @@ header .nav-item:hover {
 }
 
 #about h1 {
-    color: #00d7ff;
     margin-top: 2rem;
     font-size: 5rem;
     font-family: 'Nunito', sans-serif;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 #about p {
