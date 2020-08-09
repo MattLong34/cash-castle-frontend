@@ -93,7 +93,8 @@ header .nav-item:hover {
 }
 
 .submit-button {
-    background-color: #00ff73 !important;
+    /* background-color: #00ff73 !important; */
+    background-color: #69c9ac !important;
 }
 
 .reset-button {

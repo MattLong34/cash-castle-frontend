@@ -18,7 +18,7 @@ var myDoughnutChart = new Chart(document.getElementById("myDoughnutChart"), {
         datasets: [
             {
                 label: "Population (millions)",
-                backgroundColor: ["#00d7ff", "#e86836","#ffc900","#00ff73","#ff00f9"],
+                backgroundColor: ["#f27e20", "#767ae6","#edc560","#45a7ee","#da4f7a"],
                 data: [35,20,15,15,20]
             }
         ]
