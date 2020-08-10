@@ -1,51 +1,54 @@
-const p = document.getElementById("starting-amount").value
+const investingForm = document.querySelector('#investing-form')
+investingForm.addEventListener('submit', (event)=> submitForm(event))
+
+const p = document.getElementById("starting-amount")
 const n = 12
-const t = document.getElementById("number-of-years").value
-const r = document.getElementById("rate-of-return").value
+const t = document.getElementById("number-of-years")
+const r = document.getElementById("rate-of-return")
 const result = document.getElementById("result")
 
-function calculate() {
-    // The equation is A = p * [[1 + (r/n)] ^ nt]
-    A = (p * Math.pow((1 + (r / (n * 100))), (n * t)));
+// function calculate() {
+//     // The equation is A = p * [[1 + (r/n)] ^ nt]
+//     A = (p.value * Math.pow((1 + (r / (n * 100))), (n * t)));
   
-    // toFixed is used for rounding the amount with two decimal places.
-    const totalAmount = result.innerHTML = "The total amount is " + A.toFixed(2);
+//     // toFixed is used for rounding the amount with two decimal places.
+//     const totalAmount = result.innerHTML = "The total amount is " + A.toFixed(2);
   
-    const interestAmount = result.innerHTML += "<br> The interest is " + (A.toFixed(2) - p).toFixed(2);
-  }
+//     const interestAmount = result.innerHTML += "<br> The interest is " + (A.toFixed(2) - p).toFixed(2);
+//   }
 
-  const investingForm = document.querySelector('#investing-form')
-  investingForm.addEventListener('submit', (event)=> submitForm(event))
+  
+  var investingChart = new Chart(document.getElementById("investingChart"), {
+      type: 'line',
+      data: {
+          labels: ["Starting Value", "Final Value"],
+          datasets: [
+              {
+                  label: "Money over time",
+                  backgroundColor: ["#45a7ee"],
+                  data: [0,0]
+                }
+            ]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    stacked: true
+                }]
+            }
+        }
+    });
 
-  function submitForm(event){
+function submitForm(event){
     event.preventDefault()
     updateChart()
 }
 
-var investingChart = new Chart(document.getElementById("investingChart"), {
-    type: 'line',
-    data: {
-        labels: ["Starting Value", "Final Value"],
-        datasets: [
-            {
-                label: "Money over time",
-                backgroundColor: ["#45a7ee"],
-                data: [20000,100000]
-            }
-        ]
-    },
-    options: {
-        scales: {
-            yAxes: [{
-                stacked: true
-            }]
-        }
-    }
-});
-
 function updateChart() {
-    investingChart.data.datasets[0].data = [p.value,totalAmount];
-    investing.update()
+    // investingChart.data.datasets[0].data = [p.value,totalAmount];
+    testTotal = (p.value * Math.pow((1 + (r.value / (n * 100))), (n * t.value))).toFixed(2);
+    investingChart.data.datasets[0].data = [p.value,testTotal];
+    investingChart.update()
 }
 
 
