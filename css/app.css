@@ -39,7 +39,8 @@ header .nav-item:hover {
     font-family: 'Nunito', sans-serif;
     font-weight: 600;
     font-size: 54px;
-    padding-top: 200px;
+    /* padding-top: 200px; */
+    padding-top: 8rem;
     color: #37383c;
 }
 

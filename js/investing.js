@@ -24,7 +24,7 @@ const result = document.getElementById("result")
           labels: ["Starting Value", "Final Value"],
           datasets: [
               {
-                  label: "Money over time",
+                  label: "Growth over time",
                   backgroundColor: ["#45a7ee"],
                   data: [0,0]
                 }
@@ -37,7 +37,7 @@ const result = document.getElementById("result")
                 }]
             }
         }
-    });
+    })
 
 function submitForm(event){
     event.preventDefault()
@@ -46,8 +46,9 @@ function submitForm(event){
 
 function updateChart() {
     // investingChart.data.datasets[0].data = [p.value,totalAmount];
-    testTotal = (p.value * Math.pow((1 + (r.value / (n * 100))), (n * t.value))).toFixed(2);
-    investingChart.data.datasets[0].data = [p.value,testTotal];
+    testTotal = (p.value * Math.pow((1 + (r.value / (n * 100))), (n * t.value))).toFixed(2)
+    investingChart.data.datasets[0].data = [p.value,testTotal]
+    investingChart.data.labels = [p.value,testTotal]
     investingChart.update()
 }
 
