@@ -14,6 +14,16 @@ header .nav-item {
     margin-left: 7rem;
 }
 
+header .nav-item-log-in {
+    margin-left: 13rem;    
+    margin-right: 1rem;    
+}
+
+header .nav-item-get-started {
+    color: #f27e20 !important;  
+    border: 2px solid #f27e20;
+}
+
 /* header .fa-fort-awesome {
     margin-left: 30px;
     margin-right: 10px;
@@ -96,6 +106,10 @@ header .nav-item:hover {
 .submit-button {
     /* background-color: #00ff73 !important; */
     background-color: #69c9ac !important;
+}
+
+.cancel-button {
+    background-color: lightgray !important;
 }
 
 .reset-button {
