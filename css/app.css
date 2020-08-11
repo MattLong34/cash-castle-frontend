@@ -63,7 +63,8 @@ header .nav-item:hover {
 }
 
 #banner .banner-left {
-    background-color: #eff7f9;
+    /* background-color: #C4E1E9; */
+    background-color: rgba(196, 225, 233, 0.5);
     top: 110px;
     height: calc(100vh - 320px);
 }
