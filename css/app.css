@@ -78,9 +78,9 @@ header .nav-item:hover {
 
 /* Icons from Flaticon */
 #banner .banner-left #index-doughnut {
-    width: 40%;
+    width: 50%;
     display: block;
-    margin-left: -11rem;
+    margin-left: -13rem;
     margin-right: auto;
     margin-top: -40rem;
 }
@@ -90,7 +90,7 @@ header .nav-item:hover {
     display: block;
     margin-left: 2rem;
     margin-right: auto;
-    margin-top: 12rem;
+    margin-top: 8rem;
 }
 
 #banner .banner-left #index-investing {
