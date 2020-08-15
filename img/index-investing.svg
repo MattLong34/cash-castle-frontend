@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="512px" height="512px" class=""><g><g>
+	<path style="fill:#387663" d="M237.024,215.36l-110.08,88.32c-6.88,5.536-8,15.584-2.464,22.464   c3.168,3.936,7.808,6.016,12.512,6.016c3.488,0,7.04-1.152,10.016-3.52l110.08-88.288c6.88-5.536,8-15.616,2.464-22.496   C253.984,210.976,243.968,209.888,237.024,215.36z" data-original="#1976D2" class="active-path" data-old_color="#1976D2"/>
+	<path style="fill:#387663" d="M417.888,135.296c-3.968-7.936-13.632-11.136-21.472-7.2l-103.072,51.2   c-7.904,3.904-11.136,13.504-7.2,21.408c2.784,5.632,8.448,8.896,14.336,8.896c2.4,0,4.832-0.544,7.136-1.664l103.072-51.2   C418.56,152.8,421.792,143.2,417.888,135.296z" data-original="#1976D2" class="active-path" data-old_color="#1976D2"/>
+</g><g>
+	<circle style="fill:#69C9AC" cx="112" cy="336" r="48" data-original="#2196F3" class="" data-old_color="#2196F3"/>
+	<circle style="fill:#69C9AC" cx="272" cy="208" r="48" data-original="#2196F3" class="" data-old_color="#2196F3"/>
+	<circle style="fill:#69C9AC" cx="432" cy="128" r="48" data-original="#2196F3" class="" data-old_color="#2196F3"/>
+</g><g>
+	<path style="fill:#455A64" d="M112,512c-8.832,0-16-7.168-16-16v-64c0-8.832,7.168-16,16-16s16,7.168,16,16v64   C128,504.832,120.832,512,112,512z" data-original="#455A64" class="" data-old_color="#455A64"/>
+	<path style="fill:#455A64" d="M272,512c-8.832,0-16-7.168-16-16V304c0-8.832,7.168-16,16-16s16,7.168,16,16v192   C288,504.832,280.832,512,272,512z" data-original="#455A64" class="" data-old_color="#455A64"/>
+	<path style="fill:#455A64" d="M432,512c-8.832,0-16-7.168-16-16V224c0-8.832,7.168-16,16-16s16,7.168,16,16v272   C448,504.832,440.832,512,432,512z" data-original="#455A64" class="" data-old_color="#455A64"/>
+	<path style="fill:#455A64" d="M496,512H32c-17.632,0-32-14.336-32-32V16C0,7.168,7.168,0,16,0s16,7.168,16,16v464h464   c8.832,0,16,7.168,16,16S504.832,512,496,512z" data-original="#455A64" class="" data-old_color="#455A64"/>
+</g></g> </svg>
