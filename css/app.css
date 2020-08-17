@@ -336,4 +336,8 @@ header .nav-item:hover {
   }
 }
 
+/* RESOURCES PAGE */
 
+#resources-links {
+  margin-top: 5rem;
+}
