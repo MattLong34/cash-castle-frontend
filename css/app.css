@@ -64,47 +64,42 @@ header .nav-item:hover {
 
 /* Animations from Animista */
 #banner .banner-left .index-square {
-    /* background-color: #C4E1E9; */
-    /* background-color: rgba(196, 225, 233, 0.5); */
     background-color: rgba(54, 211, 232, 0.2);
-    /* top: 10px; */
-    margin-top: 8rem;
-    margin-left: -10rem;
+    margin-top: 60px;
+    margin-left: -30px;
     /* height: calc(100vh - 520px); */
-    height: 70vh;
-    width: 70vh;
+    height: 600px;
+    width: 600px;
 
 }
 
 /* Icons from Flaticon */
 #banner .banner-left #index-doughnut {
-    width: 50%;
+    width: 250px;
     display: block;
-    margin-left: -13rem;
-    margin-right: auto;
-    margin-top: -40rem;
+    margin-left: -50px;
+    margin-top: -580px;
 }
 
 #banner .banner-left #index-debt {
-    width: 40%;
+    /* width: 40%; */
+    width: 225px;
     display: block;
-    margin-left: 2rem;
+    margin-left: 145px;
     margin-right: auto;
-    margin-top: 8rem;
+    margin-top: 140px;
 }
 
 #banner .banner-left #index-investing {
-    width: 40%;
+    /* width: 40%; */
+    width: 200px;
     display: block;
-    margin-left: 19rem;
-    margin-right: auto;
-    margin-top: -35rem;
+    margin-left: 375px;
+    margin-top: -450px;
 }
 
 #banner .banner-right {
-    /* background-color: lightgoldenrodyellow; */
-    /* padding-left: 10rem; */
-    margin-top: 3rem;
+    margin-top: -30px;
 }
 
 /* All PAGES */
