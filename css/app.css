@@ -11,17 +11,20 @@ body {
 header .nav-item {
     font-family: 'Nunito', sans-serif;
     font-weight: 400;
-    margin-left: 7rem;
+    margin-left: 70px;
+    margin-top: 10px;
 }
 
 header .nav-item-log-in {
-    margin-left: 13rem;    
-    margin-right: 1rem;    
+    margin-left: 125px;    
+    margin-right: 15px;    
+    margin-top: 10px;
 }
 
 header .nav-item-get-started {
     color: #f27e20 !important;  
     border: 2px solid #f27e20;
+    margin-top: 10px;
 }
 
 /* header .fa-fort-awesome {
@@ -34,7 +37,8 @@ header .navbar-brand {
     font-family: 'Nunito', sans-serif;
     font-weight: 700;
     color: #37383c !important;
-    margin-left: 5rem;
+    margin-left: 50px;
+    margin-right: 100px;
 }
 
 header .nav-item:hover {
