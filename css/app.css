@@ -113,8 +113,7 @@ header .nav-item:hover {
 }
 
 .head-text h1 {
-    margin-top: 2rem;
-    font-size: 5rem;
+    font-size: 80px;
     font-family: 'Nunito', sans-serif;
     font-weight: 400;
 }
@@ -126,7 +125,7 @@ header .nav-item:hover {
 
 .submit-button {
   /* background-color: #00ff73 !important; */
-  background-color: #69c9ac !important;
+  background-color: #45a7ee !important;
 }
 
 .cancel-button {
@@ -135,6 +134,22 @@ header .nav-item:hover {
 
 .reset-button {
   background-color: lightgray !important;
+}
+
+.total-button {
+  background-color: lightgray !important;
+  margin-top: 30px;
+  width: 100%;
+}
+
+#user-income {
+  background-color: lightgray;
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 700;
 }
 
 #data {
