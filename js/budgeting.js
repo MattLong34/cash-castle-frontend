@@ -25,7 +25,7 @@ var myDoughnutChart = new Chart(document.getElementById("myDoughnutChart"), {
     },
     options: {
         title: {
-            display: true,
+            display: false,
             text: 'Your Budget Breakdown'
         }
     }
