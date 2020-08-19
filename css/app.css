@@ -350,6 +350,10 @@ header .nav-item:hover {
   margin-bottom: 50px;
 }
 
+.head-text #about .bold {
+  font-weight: 700;
+}
+
 .pulsate-fwd {
 	-webkit-animation: pulsate-fwd 4s ease-in-out infinite both;
 	        animation: pulsate-fwd 4s ease-in-out infinite both;
