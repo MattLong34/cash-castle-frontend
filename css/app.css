@@ -108,37 +108,37 @@ header .nav-item:hover {
 
 /* All PAGES */
 
-#about {
+.head-text {
     font-family: 'Nunito', sans-serif;
 }
 
-#about h1 {
+.head-text h1 {
     margin-top: 2rem;
     font-size: 5rem;
     font-family: 'Nunito', sans-serif;
     font-weight: 400;
 }
 
-#about p {
+.head-text p {
     font-weight: 300;
     font-size: 18px;
 }
 
-#data {
-    padding-bottom: 5rem;
-}
-
 .submit-button {
-    /* background-color: #00ff73 !important; */
-    background-color: #69c9ac !important;
+  /* background-color: #00ff73 !important; */
+  background-color: #69c9ac !important;
 }
 
 .cancel-button {
-    background-color: lightgray !important;
+  background-color: lightgray !important;
 }
 
 .reset-button {
-    background-color: lightgray !important;
+  background-color: lightgray !important;
+}
+
+#data {
+    padding-bottom: 5rem;
 }
 
 /* INDEX.HTML */
@@ -337,12 +337,17 @@ header .nav-item:hover {
 
 /* ABOUT PAGE */
 
-#about #piggy-image {
+.head-text #about {
+  text-align: center;
+}
+
+.head-text #piggy-image {
   width: 300px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .pulsate-fwd {
