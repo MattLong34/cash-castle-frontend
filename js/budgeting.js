@@ -37,7 +37,6 @@ function submitForm(event){
     event.preventDefault()
     updateChart()
     updateTotal()
-    // incomeButtonColor()
     incomeColor()
 }
 
@@ -48,7 +47,6 @@ function updateChart() {
 
 function updateTotal() {
     const calculatedTotal = parseFloat(userIncome.value || 0) - (parseFloat(userHousing.value || 0) + parseFloat(userTransportation.value || 0) + parseFloat(userFood.value || 0) + parseFloat(userSavings.value || 0) + parseFloat(userBills.value || 0))
-    userTotal.textContent = `Total: $${ parseFloat(calculatedTotal).toFixed(2)}`
 }
 
 function incomeColor(){
@@ -56,10 +54,13 @@ function incomeColor(){
 
     if (calculatedTotal < 0) {
         userTotal.style.background = "#da4f7a";
+        userTotal.textContent = `Over Budget: $${ parseFloat(calculatedTotal).toFixed(2)}`
     } else if (calculatedTotal > 0) {
         userTotal.style.background = "#69c9ac";
+        userTotal.textContent = `Remaining Budget: $${ parseFloat(calculatedTotal).toFixed(2)}`
     } else {
         userTotal.style.background = "lightgray";
+        userTotal.textContent = `Budget on Track: $${ parseFloat(calculatedTotal).toFixed(2)}`
     } 
 }
 
