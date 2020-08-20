@@ -31,7 +31,7 @@ var myDoughnutChart = new Chart(document.getElementById("myDoughnutChart"), {
             text: 'Your Budget Breakdown'
         }
     }
-});
+})
 
 function submitForm(event){
     event.preventDefault()

@@ -18,26 +18,26 @@ const result = document.getElementById("result")
 //   }
 
   
-  var investingChart = new Chart(document.getElementById("investingChart"), {
-      type: 'line',
-      data: {
-          labels: ["Starting Value", "Final Value"],
-          datasets: [
-              {
-                  label: "Growth over time",
-                  backgroundColor: ["#45a7ee"],
-                  data: [0,0]
-                }
-            ]
-        },
-        options: {
-            scales: {
-                yAxes: [{
-                    stacked: true
-                }]
+var investingChart = new Chart(document.getElementById("investingChart"), {
+    type: 'line',
+    data: {
+        labels: ["Starting Value", "Final Value"],
+        datasets: [
+            {
+                label: "Growth over time",
+                backgroundColor: ["#45a7ee"],
+                data: [0,0]
             }
+        ]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                stacked: true
+            }]
         }
-    })
+    }
+})
 
 function submitForm(event){
     event.preventDefault()

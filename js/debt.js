@@ -6,16 +6,66 @@ const rate = document.getElementById("interest-rate")
 const months = document.getElementById("number-of-months")
 const userMonthlyPayment = document.getElementById("monthly-payment")
 
-console.log((principal.value * rate.value) / ( 1 - (Math.pow((1 + rate.value), -months.value))))
-
-
 function submitForm(event){
     event.preventDefault()
     // updateChart()
     calculateMonthlyPayment()
+    updateChart()
 }
 
 function calculateMonthlyPayment(){
     monthlyPayment = (principal.value * (rate.value/1000)) / ( 1 - (Math.pow((1 + (rate.value/1000)), -months.value)))
     userMonthlyPayment.textContent = `Monthly Payment: $${ parseFloat(monthlyPayment).toFixed(2)}`
 }
+
+const newArray = [100,75,50,25,0]
+// const newArrayLength = newArray.length
+
+var debtChart = new Chart(document.getElementById("debtChart"), {
+    type: 'line',
+    data: {
+        labels: newArray,
+        datasets: [
+            {
+                label: "Loan value over time",
+                backgroundColor: ["#da4f7a"],
+                data: newArray
+            }
+        ]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                stacked: true
+            }]
+        }
+    }
+})
+
+
+function updateChart(){   
+    monthlyPayment = (principal.value * (rate.value/1000)) / ( 1 - (Math.pow((1 + (rate.value/1000)), -months.value)))
+    let monthlyArray = []
+    for (i = months.value; i >= 0; i--) {
+        let total = i * monthlyPayment
+        monthlyArray.push(total)
+        total = total - monthlyPayment
+        
+        monthlyArray = monthlyArray.map(function(each_element){
+            return Number(each_element.toFixed(2));
+        });
+    }
+        
+    debtChart.data.datasets[0].data = monthlyArray
+    debtChart.data.labels = monthlyArray
+    debtChart.update()
+}
+
+
+
+
+
+// monthlyArray = monthlyArray.map(function(each_element){
+//     return Number(each_element.toFixed(2));
+// });
+
