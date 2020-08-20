@@ -142,7 +142,7 @@ header .nav-item:hover {
   width: 100%;
 }
 
-#user-income {
+.total-display {
   background-color: lightgray;
   margin-top: 20px;
   width: 100%;
@@ -151,6 +151,16 @@ header .nav-item:hover {
   border-radius: 10px;
   font-weight: 700;
 }
+
+/* #monthly-payment {
+  background-color: lightgray;
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 700;
+} */
 
 #data {
     padding-bottom: 5rem;

@@ -101,6 +101,44 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
     </section>
+
+    <section id="data">        
+      <div class="container">
+          <div class="row">
+              <div class="col">
+                  <section id="yourDebtForm">
+                      <div class="container">
+                          <!-- <p>Enter your info below:</p> -->
+                          <form id="debt-form">
+                              <div class="form-group">
+                                  <label for="loan-amount">Loan Amount</label>
+                                  <textarea class="form-control" id="starting-amount" rows="1"></textarea>
+                              </div>
+                              <div class="form-group">
+                                  <label for="interest-rate">Interest Rate (%)</label>
+                                  <textarea class="form-control" id="rate-of-return" rows="1"></textarea>
+                              </div>
+                              <div class="form-group">
+                                  <label for="number-of-years">Number of Months</label>
+                                  <textarea class="form-control" id="number-of-months" rows="1"></textarea>
+                              </div>
+                              <button type="" class="btn submit-button">Update</button>
+                              <p id="result"></p>
+                              <!-- <button type="" class="btn reset-button" id="resetBudgetingForm">Reset</button> -->
+                              <p class="total-display" id="monthly-payment">Monthly Payment: $0</p>
+                          </form>
+                      </div>
+                  </section>
+              </div>
+              <div class="col-8">
+                <section id="yourInvestingChart">
+                    <div class="container">
+                        <canvas id="investingChart" width="200" height="150"></canvas>
+                    </div>
+                </section>
+            </div>
+          </div>
+      </section>
     
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

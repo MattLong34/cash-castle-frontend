@@ -50,7 +50,7 @@ function updateTotal() {
 }
 
 function incomeColor(){
-    const calculatedTotal = parseFloat(userIncome.value) - (parseFloat(userHousing.value) + parseFloat(userTransportation.value) + parseFloat(userFood.value) + parseFloat(userSavings.value) + parseFloat(userBills.value))
+    const calculatedTotal = parseFloat(userIncome.value || 0) - (parseFloat(userHousing.value || 0) + parseFloat(userTransportation.value || 0) + parseFloat(userFood.value || 0) + parseFloat(userSavings.value || 0) + parseFloat(userBills.value) || 0)
 
     if (calculatedTotal < 0) {
         userTotal.style.background = "#da4f7a";
