@@ -1,11 +1,12 @@
 const investingForm = document.querySelector('#investing-form')
 investingForm.addEventListener('submit', (event)=> submitForm(event))
 
-const p = document.getElementById("starting-amount")
+const principal = document.getElementById("starting-amount")
 const n = 12
-const t = document.getElementById("number-of-years")
-const r = document.getElementById("rate-of-return")
+const years = document.getElementById("number-of-years")
+const rate = document.getElementById("rate-of-return")
 const result = document.getElementById("result")
+const userTotal = document.getElementById("total-display")
 
 // function calculate() {
 //     // The equation is A = p * [[1 + (r/n)] ^ nt]
@@ -42,20 +43,52 @@ var investingChart = new Chart(document.getElementById("investingChart"), {
 function submitForm(event){
     event.preventDefault()
     updateChart()
+    calculateUserTotal()
+    totalColor()
 }
 
 function updateChart() {
     // investingChart.data.datasets[0].data = [p.value,totalAmount];
-    testTotal = (p.value * Math.pow((1 + (r.value / (n * 100))), (n * t.value))).toFixed(2)
+    investingTotal = (principal.value * Math.pow((1 + (rate.value / (n * 100))), (n * years.value))).toFixed(2)
 
-    
+    let annualArray = []
+    // for (i = years.value; i >= 0; i--) {
+    //     let total = i * monthlyPayment
 
-    investingChart.data.datasets[0].data = [p.value,testTotal]
-    investingChart.data.labels = [p.value,testTotal]
+    //     annualArray.push(total)
+        
+    //     anualArray = monthlyArray.map(function(each_element){
+    //         return Number(each_element.toFixed(2));
+    //     });
+    // }
+
+    // investingChart.data.datasets[0].data = annualArray
+    // investingChart.data.labels = annualArray
+
+    investingChart.data.datasets[0].data = [principal.value,investingTotal]
+    investingChart.data.labels = [principal.value,investingTotal]
     investingChart.update()
 }
 
+function calculateUserTotal(){
+    investingTotal = (principal.value * Math.pow((1 + (rate.value / (n * 100))), (n * years.value))).toFixed(2)
+    userTotal.textContent = `Ending Balance: $${parseFloat(investingTotal).toFixed(2)}`
+}
 
+function totalColor(){
+    investingTotal = (principal.value * Math.pow((1 + (rate.value / (n * 100))), (n * years.value))).toFixed(2)
+
+    if (investingTotal < 0) {
+        userTotal.style.background = "#da4f7a";
+        userTotal.textContent = `Ending Balance: $${parseFloat(investingTotal).toFixed(2)}`
+    } else if (investingTotal > 0) {
+        userTotal.style.background = "#69c9ac";
+        userTotal.textContent = `Ending Balance: $${parseFloat(investingTotal).toFixed(2)}`
+    } else {
+        userTotal.style.background = "lightgray";
+        userTotal.textContent = `Ending Balance: $${parseFloat(investingTotal).toFixed(2)}`
+    } 
+}
 
 
 

@@ -54,13 +54,13 @@ function incomeColor(){
 
     if (calculatedTotal < 0) {
         userTotal.style.background = "#da4f7a";
-        userTotal.textContent = `Over Budget: $${ parseFloat(calculatedTotal).toFixed(2)}`
+        userTotal.textContent = `Over Budget: $${parseFloat(calculatedTotal).toFixed(2)}`
     } else if (calculatedTotal > 0) {
         userTotal.style.background = "#69c9ac";
-        userTotal.textContent = `Remaining Budget: $${ parseFloat(calculatedTotal).toFixed(2)}`
+        userTotal.textContent = `Remaining Budget: $${parseFloat(calculatedTotal).toFixed(2)}`
     } else {
         userTotal.style.background = "lightgray";
-        userTotal.textContent = `Budget on Track: $${ parseFloat(calculatedTotal).toFixed(2)}`
+        userTotal.textContent = `Budget on Track: $${parseFloat(calculatedTotal).toFixed(2)}`
     } 
 }
 

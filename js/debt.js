@@ -15,7 +15,7 @@ function submitForm(event){
 
 function calculateMonthlyPayment(){
     monthlyPayment = (principal.value * (rate.value/1000)) / ( 1 - (Math.pow((1 + (rate.value/1000)), -months.value)))
-    userMonthlyPayment.textContent = `Monthly Payment: $${ parseFloat(monthlyPayment).toFixed(2)}`
+    userMonthlyPayment.textContent = `Monthly Payment: $${parseFloat(monthlyPayment).toFixed(2)}`
 }
 
 
