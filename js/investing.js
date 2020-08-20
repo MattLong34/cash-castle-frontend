@@ -25,7 +25,7 @@ var investingChart = new Chart(document.getElementById("investingChart"), {
         datasets: [
             {
                 label: "Growth over time",
-                backgroundColor: ["#45a7ee"],
+                backgroundColor: ["#69c9ac"],
                 data: [0,0]
             }
         ]
@@ -47,6 +47,9 @@ function submitForm(event){
 function updateChart() {
     // investingChart.data.datasets[0].data = [p.value,totalAmount];
     testTotal = (p.value * Math.pow((1 + (r.value / (n * 100))), (n * t.value))).toFixed(2)
+
+    
+
     investingChart.data.datasets[0].data = [p.value,testTotal]
     investingChart.data.labels = [p.value,testTotal]
     investingChart.update()

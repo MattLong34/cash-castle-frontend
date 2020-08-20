@@ -18,18 +18,17 @@ function calculateMonthlyPayment(){
     userMonthlyPayment.textContent = `Monthly Payment: $${ parseFloat(monthlyPayment).toFixed(2)}`
 }
 
-const newArray = [100,75,50,25,0]
-// const newArrayLength = newArray.length
 
 var debtChart = new Chart(document.getElementById("debtChart"), {
-    type: 'line',
+    type: 'bar',
     data: {
-        labels: newArray,
+        // labels: [0,1],
         datasets: [
             {
-                label: "Loan value over time",
+                label: "Loan value",
                 backgroundColor: ["#da4f7a"],
-                data: newArray
+                data: [0,0],
+                hoverBackgroundColor: ["#da4f7a"]
             }
         ]
     },
@@ -37,6 +36,9 @@ var debtChart = new Chart(document.getElementById("debtChart"), {
         scales: {
             yAxes: [{
                 stacked: true
+            }],
+            xAxes: [{
+                stacked: true,
             }]
         }
     }
@@ -55,11 +57,12 @@ function updateChart(){
             return Number(each_element.toFixed(2));
         });
     }
-        
+    
     debtChart.data.datasets[0].data = monthlyArray
     debtChart.data.labels = monthlyArray
     debtChart.update()
 }
+
 
 
 
