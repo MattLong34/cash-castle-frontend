@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404</title>
+    <title>Construction</title>
     <link rel="stylesheet" href="css/app.css">
     <script src="https://kit.fontawesome.com/f51de50bfe.js" crossorigin="anonymous"></script>
       <!-- Bootstrap CSS -->
@@ -11,14 +11,14 @@
 </head>
 <body>
 
-  <header>
+<header>
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <a class="navbar-brand" href="index.html"></i>cash castle</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse d-flex justify-content-around" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
+            <div class="navbar-nav">
             <a class="nav-item nav-link" href="about.html">About</a>
             <a class="nav-item nav-link" href="budgeting.html">Budgeting</a>
             <a class="nav-item nav-link" href="debt.html">Debt Repayment</a>
@@ -28,10 +28,10 @@
             <a class="nav-item-get-started nav-link" href="construction.html" data-target="#get-started-modal">Get Started</a>
             <!-- <a class="nav-item-log-in nav-link" href="construction.html" data-toggle="modal" data-target="#log-in-modal">Log In</a>
             <a class="nav-item-get-started nav-link" href="construction.html" data-toggle="modal" data-target="#get-started-modal">Get Started</a> -->
-          </div>
+            </div>
         </div>
-      </nav>
-  </header>
+        </nav>
+    </header>
 
   <section>
     <div class="modal fade" id="log-in-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -97,10 +97,33 @@
     </div>
   </section>
 
-    <section class="head-text" id="">
+    <section class="head-text">
+        <div class="container" id="about">
+            <h1>Feature Under Construction</h1>
+                    
+            <img src="img/construction.svg" alt="" id="construction-image" class="pulsate-fwd">
+        </div>
+    </section>
+    
+    <section id="intro">
         <div class="container">
-            <h1>Whoops! Nothing to see here.</h1>
-            <h2>Personal finance might make you want to run away, but try going <a href="index.html">home</a> instead.</h2>
+            <div class="row">
+                <div class="col-md-12 countdown-text">
+                    <!-- <p>We're working hard to build this feature, we'll be ready to launch in...</p> -->
+                    <p>We're working hard to build an account feature, we'll be ready to launch in...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="counter">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="countdown"></div>
+                    <p id="contact">We would love to hear from you. Please <a href="https://www.linkedin.com/in/mattlong34/">contact us</a> if you have questions, suggestions, or just want to chat!</p>
+                </div>
+            </div>
         </div>
     </section>
     
@@ -108,5 +131,16 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <!-- Rendro Countdown -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/construction.js"></script>
+
+    <script>
+        $(function() {
+        $('.countdown').countdown({
+            date: "October 2, 2020 17:00:00"
+            })
+        })
+    </script>
 </body>
 </html>
