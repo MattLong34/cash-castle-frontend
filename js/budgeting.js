@@ -47,12 +47,12 @@ function updateChart() {
 }
 
 function updateTotal() {
-    const calculatedTotal = parseInt(userIncome.value || 0) - (parseInt(userHousing.value || 0) + parseInt(userTransportation.value || 0) + parseInt(userFood.value || 0) + parseInt(userSavings.value || 0) + parseInt(userBills.value || 0))
-    userTotal.textContent = `Total: $${calculatedTotal}`
+    const calculatedTotal = parseFloat(userIncome.value || 0) - (parseFloat(userHousing.value || 0) + parseFloat(userTransportation.value || 0) + parseFloat(userFood.value || 0) + parseFloat(userSavings.value || 0) + parseFloat(userBills.value || 0))
+    userTotal.textContent = `Total: $${ parseFloat(calculatedTotal).toFixed(2)}`
 }
 
 function incomeColor(){
-    const calculatedTotal = parseInt(userIncome.value) - (parseInt(userHousing.value) + parseInt(userTransportation.value) + parseInt(userFood.value) + parseInt(userSavings.value) + parseInt(userBills.value))
+    const calculatedTotal = parseFloat(userIncome.value) - (parseFloat(userHousing.value) + parseFloat(userTransportation.value) + parseFloat(userFood.value) + parseFloat(userSavings.value) + parseFloat(userBills.value))
 
     if (calculatedTotal < 0) {
         userTotal.style.background = "#da4f7a";
