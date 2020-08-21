@@ -76,12 +76,7 @@ var myDoughnutChart = new Chart(document.getElementById("myDoughnutChart"), {
 ```
 
 ## Features
-* View 20 spectacular Greek islands
-* Easily navigate through the application with intuitive links
-* Browse islands by most popular 
-* Filter islands to view the top five in listed categories (popularity, family-friendly, budget-freindly)
-* View an island's current weather
-* Click on the Travel Warning for up-to-date COVID-19 travel restrictions
+* 
 
 ## Status
 Version 1.0 is complete and deployed (https://cash-castle.web.app)! 
