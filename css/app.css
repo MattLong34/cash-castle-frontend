@@ -2,6 +2,34 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
 
+@media (max-width: 1198px) {
+  #banner .banner-left .index-square {
+    margin-left: 320px !important;
+    height: 350px !important;
+    width: 350px !important;
+  }
+  #banner .banner-left #index-doughnut {
+    width: 150px !important;
+    margin-left: 310px !important;
+    margin-top: -380px !important;
+  }
+#banner .banner-left #index-debt {
+    /* width: 40%; */
+    width: 175px !important;
+    margin-left: 405px !important;
+    margin-top: 80px !important;
+  }
+#banner .banner-left #index-investing {
+    /* width: 40%; */
+    width: 150px !important;
+    margin-left: 525px !important;
+    margin-top: -325px !important;
+  }
+#banner .banner-right {
+    margin-top: 75px !important;
+  }
+}
+
 @media (max-width: 990px) {
   h1 {
     font-size: 50px !important;
@@ -12,6 +40,31 @@
     font-family: 'Nunito', sans-serif;
     text-align: center;
     font-size: 60px !important;
+  }
+  #banner .banner-left .index-square {
+    margin-left: 20px !important;
+    height: 350px !important;
+    width: 350px !important;
+  }
+  #banner .banner-left #index-doughnut {
+    width: 150px !important;
+    margin-left: 10px !important;
+    margin-top: -380px !important;
+  }
+#banner .banner-left #index-debt {
+    /* width: 40%; */
+    width: 175px !important;
+    margin-left: 105px !important;
+    margin-top: 80px !important;
+  }
+#banner .banner-left #index-investing {
+    /* width: 40%; */
+    width: 150px !important;
+    margin-left: 225px !important;
+    margin-top: -325px !important;
+  }
+#banner .banner-right {
+    margin-top: 75px !important;
   }
 }
 
@@ -47,7 +100,32 @@
   }
   header .navbar-brand {
     margin-left: 10px !important;
-}
+  }
+  #banner .banner-left .index-square {
+    margin-left: 20px !important;
+    height: 300px !important;
+    width: 300px !important;
+  }
+  #banner .banner-left #index-doughnut {
+    width: 100px !important;
+    margin-left: 10px !important;
+    margin-top: -280px !important;
+  }
+#banner .banner-left #index-debt {
+    /* width: 40%; */
+    width: 125px !important;
+    margin-left: 105px !important;
+    margin-top: 60px !important;
+  }
+#banner .banner-left #index-investing {
+    /* width: 40%; */
+    width: 100px !important;
+    margin-left: 225px !important;
+    margin-top: -235px !important;
+  }
+#banner .banner-right {
+    margin-top: 75px !important;
+  }
 }
 
 body {
@@ -127,7 +205,6 @@ h2 {
     /* height: calc(100vh - 520px); */
     height: 600px;
     width: 600px;
-
 }
 
 /* Icons from Flaticon */
@@ -204,16 +281,6 @@ h2 {
   border-radius: 10px;
   font-weight: 700;
 }
-
-/* #monthly-payment {
-  background-color: lightgray;
-  margin-top: 20px;
-  width: 100%;
-  text-align: center;
-  padding: 10px;
-  border-radius: 10px;
-  font-weight: 700;
-} */
 
 #data {
     padding-bottom: 5rem;
