@@ -1,9 +1,5 @@
-
 const budgetingForm = document.querySelector('#budgeting-form')
 budgetingForm.addEventListener('submit', (event)=> submitForm(event))
-
-// const resetForm = document.querySelector('#budgeting-form')
-// resetForm.addEventListener('submit', (event)=> resetChart(event))
 
 const userIncome = document.getElementById('income')
 const userHousing = document.getElementById('housing')
@@ -63,13 +59,3 @@ function incomeColor(){
         userTotal.textContent = `Budget on Track: $${parseFloat(calculatedTotal).toFixed(2)}`
     } 
 }
-
-// function submitForm(event){
-//     event.preventDefault()
-//     resetChart()
-// }
-
-// function resetChart() {
-//     myDoughnutChart.data.datasets[0].data = [35,20,15,15,20];
-//     myDoughnutChart.update()
-// }

@@ -40,18 +40,6 @@ function updateChart() {
     investingTotal = ((principal.value * Math.pow((1 + (rate.value / (n * 100))), (n * years.value))) + (contribution.value * Math.pow((1 + (rate.value / (n * 100))), (n * years.value)) - contribution.value)/(rate.value/(n*100))).toFixed(2)
 
     let annualArray = []
-    // for (i = years.value; i >= 0; i--) {
-    //     let total = i * monthlyPayment
-
-    //     annualArray.push(total)
-        
-    //     anualArray = monthlyArray.map(function(each_element){
-    //         return Number(each_element.toFixed(2));
-    //     });
-    // }
-
-    // investingChart.data.datasets[0].data = annualArray
-    // investingChart.data.labels = annualArray
 
     investingChart.data.datasets[0].data = [principal.value,investingTotal]
     investingChart.data.labels = [principal.value,investingTotal]
@@ -79,18 +67,6 @@ function totalColor(){
         userTotal.textContent = `Ending Balance: $${parseFloat(investingTotal).toFixed(2)}`
     } 
 }
-
-
-
-
-
-
-
-
-
-// investingTotal = (principal.value * Math.pow((1 + (rate.value / (n * 100))), (n * years.value))).toFixed(2)
-
-// investingTotalWithContributions = compounded growth of principal + compounded growth of contributions
 
 function investingTotalWithContributions(){
     newTotal = (principal.value * Math.pow((1 + (rate.value / (n * 100))), (n * years.value))) + (contribution.value * Math.pow((1 + (rate.value / (n * 100))), (n * years.value)) - contribution.value)/(rate.value/(n*100))

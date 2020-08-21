@@ -8,7 +8,6 @@ const userMonthlyPayment = document.getElementById("monthly-payment")
 
 function submitForm(event){
     event.preventDefault()
-    // updateChart()
     calculateMonthlyPayment()
     updateChart()
 }
@@ -17,7 +16,6 @@ function calculateMonthlyPayment(){
     monthlyPayment = (principal.value * (rate.value/1000)) / ( 1 - (Math.pow((1 + (rate.value/1000)), -months.value)))
     userMonthlyPayment.textContent = `Monthly Payment: $${parseFloat(monthlyPayment).toFixed(2)}`
 }
-
 
 var debtChart = new Chart(document.getElementById("debtChart"), {
     type: 'bar',
@@ -43,7 +41,6 @@ var debtChart = new Chart(document.getElementById("debtChart"), {
         }
     }
 })
-
 
 function updateChart(){   
     monthlyPayment = (principal.value * (rate.value/1000)) / ( 1 - (Math.pow((1 + (rate.value/1000)), -months.value)))
