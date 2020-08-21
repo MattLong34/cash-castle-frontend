@@ -420,6 +420,10 @@ header .nav-item:hover {
   margin-top: 5rem;
 }
 
+#budgeting-links {
+  margin-bottom: 20px;
+}
+
 /* CONSTRUCTION PAGE */
 
 .countdown-text {
