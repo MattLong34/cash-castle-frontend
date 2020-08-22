@@ -101,4 +101,4 @@ I hope that you find using Cash Castle to be enjoyable and helpful!
 Feel free to contact me with any questions or suggestions!
 
 ## License
-[Click to view]()
+[Click to view](https://github.com/MattLong34/cash-castle-frontend/blob/master/LICENSE.md)
