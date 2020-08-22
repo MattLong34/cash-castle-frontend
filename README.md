@@ -76,7 +76,12 @@ var myDoughnutChart = new Chart(document.getElementById("myDoughnutChart"), {
 ```
 
 ## Features
-* 
+* Easily add and interact with budgeting numbers
+* Tinker with the different factors that will impact a loan in repayment
+* Play with investment numbers and explore the effects of compound interest
+* Follow links to external financial advice
+* Live countdown timer shows when to expect a new feature
+* Fully responsive web-app that looks clean on all devices
 
 ## Status
 Version 1.0 is complete and deployed (https://cash-castle.web.app)! 
