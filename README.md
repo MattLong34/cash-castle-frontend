@@ -17,7 +17,7 @@ We believe that personal finance shouldn't be scary. Cash Castle is fun and inte
 We're here to give you the tools to slay your financial dragons and build your own Cash Castle. Jump into the sandbox today!
 
 ## Intro Video
-[Cash Castle on YouTube]()
+[Cash Castle on YouTube](https://www.youtube.com/watch?v=BGUNhfzaHNI)
 
 ## Technologies
 * HTML5
