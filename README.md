@@ -5,7 +5,6 @@
 ## Table of contents
 
 - [General Info](#general-info)
-- [Sneak Peak](#sneak-peek)
 - [Intro Video](#intro-video)
 - [Technologies](#technologies)
 - [Setup](#setup)
@@ -14,15 +13,13 @@
 - [Contact](#contact)
 - [License](#license)
 
+![Cash Castle Image](https://i.imgur.com/IVzUlft.png)
+
 ## General Info
 
 We believe that personal finance shouldn't be scary. Cash Castle is fun and interactive sandbox which allows you to play with the numbers related to budgeting, debt repayment, and investing.
 
 We're here to give you the tools to slay your financial dragons and build your own Cash Castle. Jump into the sandbox today!
-
-## Sneak Peek
-
-![Cash Castle Image](https://imgur.com/a/IAUqMRv)
 
 ## Intro Video
 
