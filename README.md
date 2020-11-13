@@ -2,6 +2,8 @@
 
 > Your financial sandbox
 
+![Cash Castle Image](https://i.imgur.com/IVzUlft.png)
+
 ## Table of contents
 
 - [General Info](#general-info)
@@ -12,8 +14,6 @@
 - [Inspiration](#inspiration)
 - [Contact](#contact)
 - [License](#license)
-
-![Cash Castle Image](https://i.imgur.com/IVzUlft.png)
 
 ## General Info
 
